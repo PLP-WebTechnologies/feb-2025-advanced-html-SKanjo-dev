@@ -1,0 +1,180 @@
+DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Kenya's Wildlife</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: #1A3D1E;
+            color: #eee;
+        }
+        header {
+            background-color: #0B3D02;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            background: #222;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #0B3D02;
+            color: white;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #2A4D29;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+        input, select {
+            margin: 8px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #0B3D02;
+            color: white;
+            cursor: pointer;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .gallery-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>Discover the Wild Beauty of Kenya</header>
+    
+    <nav>
+        <a href="#wildlife">Wildlife</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contacts">Contacts</a>
+        <a href="#register">Register</a>
+        <a href="#media">Multimedia</a>
+    </nav>
+    
+    <section id="wildlife">
+        <h2>Top 5 Iconic Wildlife in Kenya</h2>
+        <ol type="I">
+            <li>Lion 🦁- The King of the Jungle</li>
+            <li>Elephant🐘 - Gentle Giants</li>
+            <li>Leopard🐆 - Masters of Stealth</li>
+            <li>Rhino🦏 - Endangered Titans</li>
+            <li>Buffalo🐃 - The Fearless Herds also known as the wild cows</li>
+        </ol>
+    </section>
+    
+    <section id="gallery">
+        <h2>Captivating Wildlife Moments</h2>
+        <div style="text-align: center;">
+            <img src="Buffalo.jpg" alt="Buffalo in the Wild" style="width: 300px; margin: 10px; border-radius: 8px;">
+            <img src="Elephants.jpg" alt="Elephants in the Wild" style="width: 350px; margin: 10px; border-radius: 8px;">
+            <img src="Lions.jpg" alt="Lions in the Wild" style="width: 250px; margin: 10px; border-radius: 8px;">
+            <img src="Rhino.jpg" alt="Rhino in the Wild" style="width: 300px; margin: 10px; border-radius: 8px;">
+            <img src="Zebra.jpg" alt="Zebra in the Wild" style="width: 280px; margin: 10px; border-radius: 8px;">
+            <img src="Giraffe.jpg" alt="Giraffe in the Wild" style="width: 320px; margin: 10px; border-radius: 8px;">
+            <img src="Giraffes.jpg" alt="Giraffes in the Wild" style="width: 300px; margin: 10px; border-radius: 8px;">
+            <img src="wildbeest.jpg" alt="Wildbeest in the Wild" style="width: 270px; margin: 10px; border-radius: 8px;">
+            <img src="wildbest.jpg" alt="Wildbest in the Wild" style="width: 290px; margin: 10px; border-radius: 8px;">
+            <img src="Leopards2.jpg" alt="Leopards in the Wild" style="width: 310px; margin: 10px; border-radius: 8px;">
+        </div>
+    </section>
+    
+    <section id="contacts">
+        <h2>Meet Our Conservationists</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Location</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+            <tr><td>John Doe</td><td>Nairobi</td><td>+254 712 345 678</td><td>johndoe@example.com</td></tr>
+            <tr><td>Jane Smith</td><td>Mombasa</td><td>+254 723 456 789</td><td>janesmith@example.com</td></tr>
+            <tr><td>James Kariuki</td><td>Kisumu</td><td>+254 734 567 890</td><td>jamesk@example.com</td></tr>
+            <tr><td>Mary Wanjiru</td><td>Nakuru</td><td>+254 745 678 901</td><td>marywanjiru@example.com</td></tr>
+            <tr><td>Peter Otieno</td><td>Eldoret</td><td>+254 756 789 012</td><td>peterotieno@example.com</td></tr>
+        </table>
+    </section>
+    
+    <section id="register">
+        <h2>Join Our Wildlife Community</h2>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="password" placeholder="Create Password" required>
+            <input type="date" required>
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male" required> Male
+            <input type="radio" name="gender" value="female"> Female
+            <select required>
+                <option value="">Select Country</option>
+                <option value="kenya">Kenya</option>
+                <option value="uganda">Uganda</option>
+                <option value="tanzania">Tanzania</option>
+            </select>
+            <label>Interests:</label>
+            <input type="checkbox" value="wildlife"> Wildlife
+            <input type="checkbox" value="nature"> Nature
+            <input type="checkbox" value="travel"> Travel
+            <input type="submit" value="Register">
+        </form>
+    </section>
+    
+    <section id="media">
+        <h2>Sounds of the Wild</h2>
+        <audio controls>
+            <source src="https://www.soundjay.com/nature/bird-singing-in-forest.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <section>
+        <h2>Wildlife Documentary</h2>
+        <video controls width="100%">
+            <source src="ndovu.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+</body>
+</html>
